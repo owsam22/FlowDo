@@ -1,39 +1,74 @@
-# 📝 LifeBoard  
+# 🚀 Task Manager (Work in Progress)
 
-LifeBoard is a simple and modern **To-Do app** designed to help you organize your daily tasks into categories like **Personal, College, and Buy List**.  
-The project is still in progress and currently focuses on building a **beautiful animated UI** before moving into advanced features.  
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXlzcW0wN3Y3ZDBiN2UzM3A4eWxjZ2R6YjU1Z2Fsb2N5enZwcWZzeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZGHpWzdOEkMKtwLqdc/giphy.gif" width="300" alt="Work in progress animation"/>
+</p>
 
----
-
-## 🚀 Features (Work in Progress)  
-- Modern animated **homepage** with navbar and welcome message  
-- Task boxes showing current to-do items  
-- Categories for tasks: **Personal, College, Buy List**  
-- Clean **HTML, CSS, JS separation** for easy development  
+> ✨ A modern and animated **Task Manager web app** where you can manage your daily to-dos with a sleek UI.  
+> 🛠 This project is still under development. More features and animations coming soon!
 
 ---
 
-## 🛠️ Tech Stack  
-- **HTML5** – structure  
-- **CSS3** – styling & animations  
-- **JavaScript (Vanilla)** – interactivity  
+## 🌟 Features (so far)
+
+- 🎨 Modern animated UI  
+- 🗂️ Task box to manage to-dos  
+- 📱 Responsive navbar with smooth transitions  
+- ⚡ Fast and simple setup  
 
 ---
 
-## 📌 Status  
-This project is **under active development**.  
-Currently working on: **Animated UI & Homepage design**  
+## 📸 Screenshots
+
+### 🏠 Homepage
+<p align="center">
+  <img src="https://via.placeholder.com/800x400.png?text=Homepage+Screenshot" alt="Homepage Screenshot" width="600"/>
+</p>
 
 ---
 
-## 🤝 Contributing  
-Feel free to fork the repo, open issues, or suggest cool ideas to make LifeBoard better.  
+## 🎬 Demo Animation (Preview UI)
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHZtZ2JjMms3cWFoOHpob3pibnZybHd0MWU1ZWxtNmRrbHFjd2VuNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26tPoyDhjiJ2g7rEs/giphy.gif" width="600" alt="UI Animation Preview"/>
+</p>
 
 ---
 
-## 📸 Preview (Coming Soon)  
-A preview screenshot or GIF will be added once the first UI version is ready.  
+## 🚧 Work in Progress
+
+- ✅ Navbar with hover animations  
+- ✅ Welcome message with motion effects  
+- ✅ To-do task box  
+- 🔄 Add/edit/delete tasks (coming soon)  
+- 🔄 Dark/light theme toggle (planned)  
+- 🔄 Save tasks to local storage (planned)  
 
 ---
 
-### ⭐ If you like the idea, give the repo a star and stay tuned for updates!  
+## 📂 Project Structure
+
+```bash
+├── index.html        # Homepage
+├── style.css         # Styles (animations, layout)
+├── script.js         # Functionality
+└── README.md         # Project documentation
+
+
+```
+
+🔗 Connect With Me
+<p align="center"> <a href="https://github.com/owsam22"><img src="https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white" alt="GitHub"/></a> <a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"/></a> <a href="mailto:samarpa.works@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email"/></a> </p>
+
+
+💡 Future Plans
+
+✨ Cloud sync with database
+
+📊 Task completion analytics
+
+🖼️ More animations for a modern feel
+
+🌍 Deploy live on Vercel/Netlify
+
+<p align="center"> Made with ❤️ by <a href="https://github.com/owsam22">Sam</a> </p> ```

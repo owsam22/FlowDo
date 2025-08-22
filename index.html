@@ -3,36 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LifeBoard</title>
+  <title>Life Board</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>LifeBoard</h1>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">Life Board</h1>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tasks</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section class="category">
-      <h2>Buy List</h2>
-      <ul id="buy-list"></ul>
-      <input type="text" id="buy-input" placeholder="Add item...">
-      <button onclick="addTask('buy')">Add</button>
-    </section>
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <h2 id="welcome-msg">Welcome Back 👋</h2>
+    <p class="subtitle">Stay focused. Stay organized. Conquer the day.</p>
+  </section>
 
-    <section class="category">
-      <h2>Personal</h2>
-      <ul id="personal-list"></ul>
-      <input type="text" id="personal-input" placeholder="Add task...">
-      <button onclick="addTask('personal')">Add</button>
-    </section>
-
-    <section class="category">
-      <h2>College</h2>
-      <ul id="college-list"></ul>
-      <input type="text" id="college-input" placeholder="Add task...">
-      <button onclick="addTask('college')">Add</button>
-    </section>
-  </main>
+  <!-- To-Do Tasks Section -->
+  <section class="tasks">
+    <h3>Your To-Do’s</h3>
+    <div class="task-boxes" id="task-container">
+      <!-- Tasks injected dynamically with JS -->
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

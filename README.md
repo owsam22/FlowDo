@@ -1,4 +1,4 @@
-# 🌊 FlowDo  
+# 🌊 FlowDo  (Working in Progress)
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3B82F6&center=true&vCenter=true&width=435&lines=Welcome+to+FlowDo!;Smart+Task+Manager;Animated+and+Beautiful;Built+by+Sam+✨" alt="Typing SVG" />

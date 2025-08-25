@@ -1,107 +1,119 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Body */
+/* Background with smooth gradient animation */
 body {
-  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
-  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
   color: #333;
 }
 
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
 /* Navbar */
-.navbar {
+nav {
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Welcome */
+header {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.3em;
+  color: #222;
+}
+
+/* Task container */
+.task-container {
+  background: #fff;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.task-container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f7f7f7;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 0 0 20px 20px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+li.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* Buttons */
+button {
+  background: #4CAF50;
   color: white;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.nav-links a:hover {
-  color: #ffdf70;
+button:hover {
+  background: #45a049;
 }
 
-/* Welcome Section */
-.welcome {
+#add-task-btn {
+  display: block;
+  margin: 15px auto 0;
+  background: #007bff;
+}
+
+#add-task-btn:hover {
+  background: #0056b3;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
   text-align: center;
-  margin-top: 60px;
-  color: white;
-  animation: fadeIn 2s ease-in-out;
+  width: 300px;
 }
 
-.welcome h2 {
-  font-size: 32px;
-}
-
-.subtitle {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-/* Task Section */
-.tasks {
-  margin: 60px auto;
-  max-width: 900px;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-.tasks h3 {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.task-boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.task {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
-  padding: 20px;
-  border-radius: 16px;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.task:hover {
-  transform: translateY(-5px) scale(1.03);
-  background: rgba(255, 255, 255, 0.25);
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.modal-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
 }

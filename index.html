@@ -3,33 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life Board</title>
+  <title>Flowdo - Task Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <h1 class="logo">Life Board</h1>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Tasks</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
+  <nav>
+    <h1>Flowdo</h1>
   </nav>
 
-  <!-- Welcome Section -->
-  <section class="welcome">
-    <h2 id="welcome-msg">Welcome Back 👋</h2>
-    <p class="subtitle">Stay focused. Stay organized. Conquer the day.</p>
-  </section>
+  <!-- Welcome Message -->
+  <header>
+    <h2>Welcome, Sam!</h2>
+  </header>
 
-  <!-- To-Do Tasks Section -->
-  <section class="tasks">
-    <h3>Your To-Do’s</h3>
-    <div class="task-boxes" id="task-container">
-      <!-- Tasks injected dynamically with JS -->
+  <!-- Task Section -->
+  <main>
+    <div class="task-container">
+      <h3>Pending Tasks</h3>
+      <ul id="task-list"></ul>
+      <button id="add-task-btn">+ Add Task</button>
     </div>
-  </section>
+  </main>
+
+  <!-- Add Task Modal -->
+  <div id="task-modal" class="modal">
+    <div class="modal-content">
+      <h3>Add New Task</h3>
+      <input type="text" id="task-input" placeholder="Enter your task...">
+      <div class="modal-actions">
+        <button id="save-task-btn">Save</button>
+        <button id="close-modal-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
